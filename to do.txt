@@ -1,0 +1,10 @@
+Create something that stores generic squadron properties
+Create squadron objects
+Create group objects
+Create fight subroutine
+Create list of things needing to happen this turn
+
+
+Reading files in javascript:
+https://blog.mounirmesselmeni.de/2012/11/20/reading-csv-file-with-javascript-and-html5-file-api/
+https://developer.mozilla.org/en-US/docs/Web/API/FileReader
