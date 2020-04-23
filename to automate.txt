@@ -1,0 +1,67 @@
+ ' Copy B cells over, Team 1
+    Range("B16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+    
+    Range("B17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+    
+    ' Copy C cells over, Team 1
+    Range("C16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+    
+    Range("C17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+        
+    ' Copy D cells over, Team 1
+    Range("D16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+     
+    Range("D17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+    
+    ' Copy H cells over, Team 2
+    Range("H16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+    
+    Range("H17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+    
+    ' Copy I cells over, Team 2
+    Range("I16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+    
+    Range("I17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+    
+    ' Copy J cells over, Team 2
+    Range("J16").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-12]C"
+    
+    Range("J17").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-9]C"
+    
+    ' Sum Team 1 Fighters
+    Range("E16").Select
+    ActiveCell.FormulaR1C1 = "=SUM(RC[-3]:RC[-1])"
+    Range("E16").Select
+    
+    ' Copy Team 1 Bombers from Team 1 Fighters
+    Selection.AutoFill Destination:=Range("E16:E17"), Type:=xlFillDefault
+    
+    ' Copy sum function from Team 1 to Team 2
+    Range("E16:E17").Select
+    Selection.Copy
+    Range("K16").Select
+    ActiveSheet.Paste
